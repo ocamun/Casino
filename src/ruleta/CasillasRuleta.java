@@ -5,15 +5,15 @@ import java.util.Random;
 public class CasillasRuleta {
     int NumeroMinimo = 0;
     int NumeroMaximo = 36;
+    int Numero;
 
     Random random = new Random();
 
     //GENERACIÓN DEL NÚMERO ALEATORIO DEL 0 AL 36.
-    int NumeroCasillaAleatorio = random.nextInt(NumeroMaximo + NumeroMinimo) + NumeroMinimo;
+    int NumeroCasillaAleatorio = random.nextInt((NumeroMaximo - NumeroMinimo) + NumeroMinimo);
 
     //CÁLCULO DEL RESTO DEL NÚMERO GENERADO ALEATORIAMENTE
     int RestoNumeroCasilla = NumeroCasillaAleatorio % 2;
-
 
     //DETECTOR DE PAR O IMPAR
     public void ParImpar(){
@@ -45,6 +45,27 @@ public class CasillasRuleta {
         }
     }
 
+    //DETECTOR DE TERCIO 1º 2º 3º
+    public void NumeroTercio() {
+        if (NumeroCasillaAleatorio == 3 || NumeroCasillaAleatorio == 6 || NumeroCasillaAleatorio == 9 || NumeroCasillaAleatorio == 12 || NumeroCasillaAleatorio == 15 || NumeroCasillaAleatorio == 18 || NumeroCasillaAleatorio == 21 || NumeroCasillaAleatorio == 24 || NumeroCasillaAleatorio == 27 || NumeroCasillaAleatorio == 30 || NumeroCasillaAleatorio == 33 || NumeroCasillaAleatorio == 36) {
+            boolean PrimerTercio = true;
+            boolean SegundoTercio = false;
+            boolean TercerTercio = false;
+        }
+
+        if (NumeroCasillaAleatorio == 2 || NumeroCasillaAleatorio == 5 || NumeroCasillaAleatorio == 8 || NumeroCasillaAleatorio == 11 || NumeroCasillaAleatorio == 14 || NumeroCasillaAleatorio == 17 || NumeroCasillaAleatorio == 20 || NumeroCasillaAleatorio == 23 || NumeroCasillaAleatorio == 26 || NumeroCasillaAleatorio == 29 || NumeroCasillaAleatorio == 32 || NumeroCasillaAleatorio == 35) {
+            boolean PrimerTercio = false;
+            boolean SegundoTercio = true;
+            boolean TercerTercio = false;
+        }
+
+        if (NumeroCasillaAleatorio == 1 || NumeroCasillaAleatorio == 4 || NumeroCasillaAleatorio == 7 || NumeroCasillaAleatorio == 10 || NumeroCasillaAleatorio == 13 || NumeroCasillaAleatorio == 16 || NumeroCasillaAleatorio == 19 || NumeroCasillaAleatorio == 22 || NumeroCasillaAleatorio == 25 || NumeroCasillaAleatorio == 28 || NumeroCasillaAleatorio == 31 || NumeroCasillaAleatorio == 34) {
+            boolean PrimerTercio = true;
+            boolean SegundoTercio = false;
+            boolean TercerTercio = false;
+        }
+    }
+
     //DETECTOR DE COLOR POR CADA NÚMERO
     public void ColorNumero() {
         if (NumeroCasillaAleatorio == 0) {
@@ -64,5 +85,7 @@ public class CasillasRuleta {
             boolean EsRojo = false;
             boolean EsNegro = true;
         }
+
     }
+
 }
