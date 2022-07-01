@@ -5,7 +5,6 @@ import java.util.Random;
 public class CasillasRuleta {
     int NumeroMinimo = 0;
     int NumeroMaximo = 36;
-    int Numero;
 
     Random random = new Random();
 
@@ -60,9 +59,9 @@ public class CasillasRuleta {
         }
 
         if (NumeroCasillaAleatorio == 1 || NumeroCasillaAleatorio == 4 || NumeroCasillaAleatorio == 7 || NumeroCasillaAleatorio == 10 || NumeroCasillaAleatorio == 13 || NumeroCasillaAleatorio == 16 || NumeroCasillaAleatorio == 19 || NumeroCasillaAleatorio == 22 || NumeroCasillaAleatorio == 25 || NumeroCasillaAleatorio == 28 || NumeroCasillaAleatorio == 31 || NumeroCasillaAleatorio == 34) {
-            boolean PrimerTercio = true;
+            boolean PrimerTercio = false;
             boolean SegundoTercio = false;
-            boolean TercerTercio = false;
+            boolean TercerTercio = true;
         }
     }
 
