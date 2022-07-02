@@ -101,6 +101,10 @@ public class CellsRoullette {
 
     }
 
+    public int randomCellNumber() {
+        return randomCellNumber;
+    }
+
     public boolean isEven() {
         return isEven;
     }
