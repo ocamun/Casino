@@ -6,6 +6,7 @@ public class CellsRoullette {
     int maxNumber = 36;
 
     boolean isEven;
+    boolean isOdd;
 
     boolean firstDozen;
     boolean secondDozen;
@@ -28,8 +29,12 @@ public class CellsRoullette {
     int finalSolutionNumberCell = randomCellNumber % 2;
 
     //DETECTOR DE PAR O IMPAR
-    private void EvenOdd(){
-        isEven = finalSolutionNumberCell == 0;
+    private void Even(){
+        if (finalSolutionNumberCell == 0) {
+            isEven = true;
+        } else {
+            isOdd = true;
+        }
     }
 
     //Dozen detector 1º 2º 3º
