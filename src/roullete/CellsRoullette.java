@@ -105,6 +105,10 @@ public class CellsRoullette {
         return isEven;
     }
 
+    public boolean isOdd() {
+        return  isOdd;
+    }
+
     public boolean firstDozen() {
         return firstDozen;
     }
