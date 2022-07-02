@@ -1,10 +1,10 @@
-package ruleta.ruletaoriginal;
+package roullete.originalroullette;
 
-import ruleta.CasillasRuleta;
+import roullete.CellsRoullette;
 
 public class MainRuletaOriginal {
     public static void main(String[] args) {
-        new CasillasRuleta();
+        new CellsRoullette();
         System.out.println("Funciona CasillasRuleta");
     }
 

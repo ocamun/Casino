@@ -1,4 +1,4 @@
-package ruleta;
+package roullete;
 
 import java.util.Random;
 
