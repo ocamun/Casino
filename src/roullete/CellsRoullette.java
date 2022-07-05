@@ -1,15 +1,13 @@
 package roullete;
 
+import java.awt.*;
 import java.util.Random;
 
 public class CellsRoullette {
+
+    public int NumberCell;
     int maxNumber = 36;
 
-    boolean isEven;
-    boolean isOdd;
-
-    boolean firstDozen;
-    boolean secondDozen;
     boolean thirdDozen;
 
     boolean firstThird;
@@ -23,42 +21,61 @@ public class CellsRoullette {
     Random random = new Random();
 
     //GENERACIÓN DEL NÚMERO ALEATORIO DEL 0 AL 36.
-    int randomCellNumber = random.nextInt(maxNumber);
+    public int randomCellNumber = random.nextInt(maxNumber);
 
     //CÁLCULO DEL RESTO DEL NÚMERO GENERADO ALEATORIAMENTE
-    int finalSolutionNumberCell = randomCellNumber % 2;
+    public int finalSolutionNumberCell = randomCellNumber % 2;
 
-    //DETECTOR DE PAR O IMPAR
-    private void Even(){
+    public int randomCellNumber() {
+        return randomCellNumber();
+    }
+
+    //Even detector
+    public boolean isEven() {
         if (finalSolutionNumberCell == 0) {
-            isEven = true;
+            return true;
         } else {
-            isOdd = true;
+            return false;
         }
     }
 
-    //Dozen detector 1º 2º 3º
-    private void DozenNumber() {
+    //Odd detector
+    public boolean isOdd() {
+        if (finalSolutionNumberCell == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //Dozen detector 1º
+    public boolean isFirstDozen() {
         if (randomCellNumber == 1 || randomCellNumber == 2 || randomCellNumber == 3 || randomCellNumber == 4 || randomCellNumber == 5 || randomCellNumber == 6 || randomCellNumber == 7 || randomCellNumber == 8 || randomCellNumber == 9 || randomCellNumber == 10 || randomCellNumber == 11 || randomCellNumber == 12) {
-            firstDozen = true;
-            secondDozen = false;
-            thirdDozen = false;
-        }
-
-        if (randomCellNumber == 13 || randomCellNumber == 14 || randomCellNumber == 15 || randomCellNumber == 16 || randomCellNumber == 17 || randomCellNumber == 18 || randomCellNumber == 19 || randomCellNumber == 20 || randomCellNumber == 21 || randomCellNumber == 22 || randomCellNumber == 23 || randomCellNumber == 24) {
-            firstDozen = false;
-            secondDozen = true;
-            thirdDozen = false;
-        }
-
-        if (randomCellNumber == 25 || randomCellNumber == 26 || randomCellNumber == 27 || randomCellNumber == 28 || randomCellNumber == 29 || randomCellNumber == 30 || randomCellNumber == 31 || randomCellNumber == 32 || randomCellNumber == 33 || randomCellNumber == 34 || randomCellNumber == 35 || randomCellNumber == 36) {
-            firstDozen = false;
-            secondDozen = false;
-            thirdDozen = true;
+            return true;
+        } else {
+            return false;
         }
     }
 
-    //DETECTOR DE TERCIO 1º 2º 3º
+    //Dozen detector 2º
+    public boolean isSecondThird() {
+        if (randomCellNumber == 13 || randomCellNumber == 14 || randomCellNumber == 15 || randomCellNumber == 16 || randomCellNumber == 17 || randomCellNumber == 18 || randomCellNumber == 19 || randomCellNumber == 20 || randomCellNumber == 21 || randomCellNumber == 22 || randomCellNumber == 23 || randomCellNumber == 24) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //Dozen detector 3º
+    public boolean isThirdThird() {
+        if (randomCellNumber == 25 || randomCellNumber == 26 || randomCellNumber == 27 || randomCellNumber == 28 || randomCellNumber == 29 || randomCellNumber == 30 || randomCellNumber == 31 || randomCellNumber == 32 || randomCellNumber == 33 || randomCellNumber == 34 || randomCellNumber == 35 || randomCellNumber == 36) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //Third detector 1º
     private void ThirdThird() {
         if (randomCellNumber == 3 || randomCellNumber == 6 || randomCellNumber == 9 || randomCellNumber == 12 || randomCellNumber == 15 || randomCellNumber == 18 || randomCellNumber == 21 || randomCellNumber == 24 || randomCellNumber == 27 || randomCellNumber == 30 || randomCellNumber == 33 || randomCellNumber == 36) {
             firstThird = true;
@@ -99,53 +116,5 @@ public class CellsRoullette {
             isBlack = true;
         }
 
-    }
-
-    public int randomCellNumber() {
-        return randomCellNumber;
-    }
-
-    public boolean isEven() {
-        return isEven;
-    }
-
-    public boolean isOdd() {
-        return  isOdd;
-    }
-
-    public boolean firstDozen() {
-        return firstDozen;
-    }
-
-    public boolean secondDozen() {
-        return secondDozen;
-    }
-
-    public boolean thirdDozen() {
-        return thirdDozen;
-    }
-
-    public boolean firstThird() {
-        return firstThird;
-    }
-
-    public boolean secondThird() {
-        return secondThird;
-    }
-
-    public boolean thirdTird() {
-        return thirdThird;
-    }
-
-    public boolean isRed() {
-        return isRed;
-    }
-
-    public boolean isBlack() {
-        return isBlack;
-    }
-
-    public boolean isGreen() {
-        return isGreen;
     }
 }
