@@ -58,7 +58,7 @@ public class CellsRoullette {
     }
 
     //Dozen detector 2º
-    public boolean isSecondThird() {
+    public boolean isSecondDozen() {
         if (randomCellNumber == 13 || randomCellNumber == 14 || randomCellNumber == 15 || randomCellNumber == 16 || randomCellNumber == 17 || randomCellNumber == 18 || randomCellNumber == 19 || randomCellNumber == 20 || randomCellNumber == 21 || randomCellNumber == 22 || randomCellNumber == 23 || randomCellNumber == 24) {
             return true;
         } else {
@@ -67,7 +67,7 @@ public class CellsRoullette {
     }
 
     //Dozen detector 3º
-    public boolean isThirdThird() {
+    public boolean isThirdDozen() {
         if (randomCellNumber == 25 || randomCellNumber == 26 || randomCellNumber == 27 || randomCellNumber == 28 || randomCellNumber == 29 || randomCellNumber == 30 || randomCellNumber == 31 || randomCellNumber == 32 || randomCellNumber == 33 || randomCellNumber == 34 || randomCellNumber == 35 || randomCellNumber == 36) {
             return true;
         } else {
@@ -75,24 +75,28 @@ public class CellsRoullette {
         }
     }
 
-    //Third detector 1º
-    private void ThirdThird() {
+    //Third detector
+    public boolean isFirstThird() {
         if (randomCellNumber == 3 || randomCellNumber == 6 || randomCellNumber == 9 || randomCellNumber == 12 || randomCellNumber == 15 || randomCellNumber == 18 || randomCellNumber == 21 || randomCellNumber == 24 || randomCellNumber == 27 || randomCellNumber == 30 || randomCellNumber == 33 || randomCellNumber == 36) {
-            firstThird = true;
-            secondThird = false;
-            thirdThird = false;
+            return true;
+        } else {
+            return false;
         }
+    }
 
-        if (randomCellNumber == 2 || randomCellNumber == 5 || randomCellNumber == 8 || randomCellNumber == 11 || randomCellNumber == 14 || randomCellNumber == 17 || randomCellNumber == 20 || randomCellNumber == 23 || randomCellNumber == 26 || randomCellNumber == 29 || randomCellNumber == 32 || randomCellNumber == 35) {
-            firstThird = false;
-            secondThird = true;
-            thirdThird = false;
+    public boolean isSecondThird() {
+        if (randomCellNumber == 3 || randomCellNumber == 6 || randomCellNumber == 9 || randomCellNumber == 15 || randomCellNumber == 18 || randomCellNumber == 21 || randomCellNumber == 24 || randomCellNumber == 27 || randomCellNumber == 30 || randomCellNumber == 33 || randomCellNumber == 36) {
+            return true;
+        } else {
+            return false;
         }
+    }
 
+    public boolean isThirdThird() {
         if (randomCellNumber == 1 || randomCellNumber == 4 || randomCellNumber == 7 || randomCellNumber == 10 || randomCellNumber == 13 || randomCellNumber == 16 || randomCellNumber == 19 || randomCellNumber == 22 || randomCellNumber == 25 || randomCellNumber == 28 || randomCellNumber == 31 || randomCellNumber == 34) {
-            firstThird = false;
-            secondThird = false;
-            thirdThird = true;
+            return true;
+        } else {
+            return false;
         }
     }
 
