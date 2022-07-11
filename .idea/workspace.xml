@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c45f4e3-3786-4559-b238-4ecc7891f3a9" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/MainWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prizes/MoneyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/roulette/Bet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/roulette/WindowRoulette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roullete/CellsRoullette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roullete/CellsRoullette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roullete/originalroullette/MainRuletaOriginal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roullete/CellsRoullette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roulette/CellsRoullette.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,37 +25,53 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.1.1/lib/src.zip!/java.desktop/java/awt/Window.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2BLuJjqpknTqBae4OZUkFQ0Qrem" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="roulette" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carlo\IdeaProjects\Casino\Casino\src\roullete\images" />
+      <recent name="C:\Users\carlo\IdeaProjects\Casino\Casino\src\roullete\resources" />
+      <recent name="C:\Users\carlo\IdeaProjects\Casino\Casino\src\resources" />
+      <recent name="C:\Users\carlo\IdeaProjects\Casino\Casino\src\resources\roulette" />
       <recent name="C:\Users\carlo\IdeaProjects\Casino\Casino\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainWindow">
-    <configuration name="MainRuletaOriginal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="roullete.originalroullette.MainRuletaOriginal" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="craps.main.Frame" />
       <module name="Casino" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="roullete.originalroullette.*" />
+          <option name="PATTERN" value="craps.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,8 +79,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainWindow" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Casino" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRuletaOriginal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="roullete.originalroullette.MainRuletaOriginal" />
+      <module name="Casino" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="roulette.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roulette.RouletteWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="roulette.RouletteWindow" />
       <module name="Casino" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,8 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainWindow" />
-        <item itemvalue="Application.MainRuletaOriginal" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Frame" />
+        <item itemvalue="Application.roulette.RouletteWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657017134695</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update">
+      <created>1657203055893</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657203055893</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,8 +214,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Casino$MainWindow.ic" NAME="MainWindow Coverage Results" MODIFIED="1657130419980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

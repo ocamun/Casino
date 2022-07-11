@@ -1,12 +1,12 @@
-package roullete;
+package roulette;
 
-import java.awt.*;
 import java.util.Random;
 
 public class CellsRoullette {
 
-    public int NumberCell;
-    int maxNumber = 36;
+    static int maxNumber = 36;
+
+    private String cellNumber;
 
     boolean thirdDozen;
 
@@ -18,17 +18,13 @@ public class CellsRoullette {
     boolean isBlack;
     boolean isGreen;
 
-    Random random = new Random();
+    static Random random = new Random();
 
     //GENERACIÓN DEL NÚMERO ALEATORIO DEL 0 AL 36.
-    public int randomCellNumber = random.nextInt(maxNumber);
+    public static int randomCellNumber = random.nextInt(maxNumber);
 
     //CÁLCULO DEL RESTO DEL NÚMERO GENERADO ALEATORIAMENTE
     public int finalSolutionNumberCell = randomCellNumber % 2;
-
-    public int randomCellNumber() {
-        return randomCellNumber();
-    }
 
     //Even detector
     public boolean isEven() {
@@ -119,6 +115,5 @@ public class CellsRoullette {
             isRed = false;
             isBlack = true;
         }
-
     }
 }
